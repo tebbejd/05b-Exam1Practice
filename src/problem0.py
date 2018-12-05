@@ -277,11 +277,13 @@ def problem0b(n):
     ###########################################################################
     # ------------------------------------------------------------------
     count = 0
-    for k in range (n - 1):
+    for k in range(n - 1):
         if is_prime(2 + k) == True:
             count += 1
 
     return count
+
+
 def run_test_problem0c():
     """ Tests the   problem0c  function. """
     print()
@@ -349,9 +351,10 @@ def problem0c(circle, n, window):
     # -------------------------------------------------------------------------
     circle.attach_to(window)
     for k in range(n):
-        circles = rg.Circle(rg.Point(circle.center.x + circle.radius * 2 * (k + 1),circle.center.y),circle.radius)
+        circles = rg.Circle(rg.Point(circle.center.x + circle.radius * 2 * (k + 1), circle.center.y), circle.radius)
         circles.attach_to(window)
     window.render(.5)
+
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
